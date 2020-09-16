@@ -8,36 +8,18 @@
   <body>
     <div id="cesiumContainer" style="height: 100%;"></div>
     <div id="credit" style="display: none;"></div>
-    <script>
+    <div class="the-buttons">
+      <button id="find-me-button">Find my ass</button>
+    </div>
+    <script src="client.js"></script>
 
-      var viewer = new Cesium.Viewer('cesiumContainer', {
-        'animation': false,
-        'baseLayerPicker': false,
-        'fullscreenButton': false,
-        'geocoder':  false,
-        'homeButton': true,
-        'infoBox': false,
-        'sceneModePicker': false,
-        'selectionIndicator': true,
-        'timeline': false,
-        'navigationHelpButton': false,
-        'navigationInstructionsInitiallyVisible': false,
-        'scene3DOnly': true,
-        'imageryProvider': new Cesium.MapboxStyleImageryProvider({
-          /*styleId: 'satellite-streets-v11',*/
-          styleId: 'dark-v10',
-          accessToken: 'pk.eyJ1Ijoia3Ric2gzIiwiYSI6ImNrY3dtZXZubDBmNzkydHMxZ2NyaDJ4MnMifQ.HFSdqEdMzOTylGqEWXUa9A'
-        }),
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.20.0/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
 
-        'creditContainer': 'credit'
-      });
-
-      var layers = viewer.scene.imageryLayers;
-
-
-      viewer.scene.debugShowFramesPerSecond = true;
-      viewer.resolutionScale = 1.0 / devicePixelRatio;
-    </script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
   </body>
 </html>

@@ -2,3 +2,11 @@ html, body {
   margin: 0;
   height: 100%;
 }
+
+.the-buttons {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
